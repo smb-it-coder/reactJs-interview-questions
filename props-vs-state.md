@@ -52,7 +52,7 @@ In this example, we'll create a parent component (ParentComponent) that passes a
             
             export default ParentComponent;
 
-
+# Child Component
 
       // ChildComponent.js
       import React from 'react';
