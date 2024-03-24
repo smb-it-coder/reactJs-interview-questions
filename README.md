@@ -2,8 +2,8 @@
 - What is ReactJS?
 - ans
       ReactJS, commonly referred to as React, is an open-source JavaScript library developed by Facebook for building user interfaces (UIs) and single-page applications (SPAs). React allows developers to create reusable UI components and manage their state efficiently, making it easier to build complex, interactive web applications.
-- What are the key features of ReactJS?
-- Key features of React include:
+# What are the key features of ReactJS?
+# Key features of React include:
 
 ### Component-Based Architecture: 
 React utilizes a modular, component-based approach where UIs are composed of reusable components. Each component encapsulates its own logic and UI elements, making the codebase easier to maintain and understand.
