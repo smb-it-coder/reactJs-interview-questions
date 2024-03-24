@@ -26,6 +26,8 @@ Let's create a simple React example to illustrate the difference between state a
 
 In this example, we'll create a parent component (ParentComponent) that passes a prop to a child component (ChildComponent). The child component will display the prop value. Additionally, the child component will have its own internal state, which it can modify independently.
 
+# Parent Component
+
             // ParentComponent.js
             import React from 'react';
             import ChildComponent from './ChildComponent';
