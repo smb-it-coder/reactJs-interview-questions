@@ -22,7 +22,68 @@ In React, both state and props are used to manage data and communicate between c
 In summary, state is used for managing mutable data within a component, while props are used for passing immutable data from parent components to child components. Understanding the difference between state and props is essential for effectively managing data flow and building modular, reusable components in React applications.
 
 
+Let's create a simple React example to illustrate the difference between state and props.
+
+In this example, we'll create a parent component (ParentComponent) that passes a prop to a child component (ChildComponent). The child component will display the prop value. Additionally, the child component will have its own internal state, which it can modify independently.
+
+            // ParentComponent.js
+            import React from 'react';
+            import ChildComponent from './ChildComponent';
+            
+            function ParentComponent() {
+              // Define a state variable
+              const [parentState, setParentState] = React.useState('Hello from Parent');
+            
+              // Define a function to handle state update
+              const updateState = () => {
+                setParentState('Updated state from Parent');
+              };
+            
+              return (
+                <div>
+                  <h2>Parent Component</h2>
+                  <p>Parent State: {parentState}</p>
+                  {/* Pass a prop to ChildComponent */}
+                  <ChildComponent propFromParent="Hello from Parent Prop" />
+                  <button onClick={updateState}>Update State</button>
+                </div>
+              );
+            }
+            
+            export default ParentComponent;
 
 
 
+      // ChildComponent.js
+      import React from 'react';
+      
+      function ChildComponent(props) {
+        // Define a state variable
+        const [childState, setChildState] = React.useState('Hello from Child');
+      
+        // Define a function to handle state update
+        const updateState = () => {
+          setChildState('Updated state from Child');
+        };
+      
+        return (
+          <div>
+            <h3>Child Component</h3>
+            {/* Display the prop passed from the parent */}
+            <p>Parent Prop: {props.propFromParent}</p>
+            {/* Display the child component's state */}
+            <p>Child State: {childState}</p>
+            <button onClick={updateState}>Update Child State</button>
+          </div>
+        );
+      }
+      
+      export default ChildComponent;
+
+
+In this example:
+
+ParentComponent maintains its own state using the useState hook (parentState). It also passes a prop (propFromParent) to ChildComponent.
+ChildComponent receives the prop from its parent and displays its value. It also maintains its own internal state using the useState hook (childState).
+You can see how the parent component manages its state independently of the child component's state. Additionally, the child component receives data from its parent via props, which it can display but cannot modify directly. Try updating the state in both components and observe how they behave independently.
 
