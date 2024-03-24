@@ -1,17 +1,21 @@
 # reactJs-interview-questions
 - What is ReactJS?
-- ans -
+- ans
       ReactJS, commonly referred to as React, is an open-source JavaScript library developed by Facebook for building user interfaces (UIs) and single-page applications (SPAs). React allows developers to create reusable UI components and manage their state efficiently, making it easier to build complex, interactive web applications.
 - What are the key features of ReactJS?
 - Key features of React include:
 
-###Component-Based Architecture:### React utilizes a modular, component-based approach where UIs are composed of reusable components. Each component encapsulates its own logic and UI elements, making the codebase easier to maintain and understand.
+### Component-Based Architecture: 
+React utilizes a modular, component-based approach where UIs are composed of reusable components. Each component encapsulates its own logic and UI elements, making the codebase easier to maintain and understand.
 
-Virtual DOM: React employs a virtual DOM (Document Object Model) to efficiently update the user interface. Instead of directly manipulating the browser's DOM, React creates a lightweight, virtual representation of the DOM in memory. This allows React to perform efficient updates by comparing the virtual DOM with the actual DOM and applying only the necessary changes.
+### Virtual DOM:
+React employs a virtual DOM (Document Object Model) to efficiently update the user interface. Instead of directly manipulating the browser's DOM, React creates a lightweight, virtual representation of the DOM in memory. This allows React to perform efficient updates by comparing the virtual DOM with the actual DOM and applying only the necessary changes.
 
-###JSX (JavaScript XML):### React uses JSX, a syntax extension that allows developers to write HTML-like code within JavaScript. JSX makes it easier to describe the UI components' structure and appearance, making the code more readable and maintainable.
+### JSX (JavaScript XML:
+React uses JSX, a syntax extension that allows developers to write HTML-like code within JavaScript. JSX makes it easier to describe the UI components' structure and appearance, making the code more readable and maintainable.
 
-###Unidirectional Data Flow:### React follows a unidirectional data flow architecture, where data flows in a single direction from parent to child components. This makes it easier to understand how data changes propagate through the application and helps prevent unexpected side effects.
+### Unidirectional Data Flow:
+React follows a unidirectional data flow architecture, where data flows in a single direction from parent to child components. This makes it easier to understand how data changes propagate through the application and helps prevent unexpected side effects.
 
 ###Declarative Syntax:### React promotes a declarative programming style, where developers describe the desired UI state, and React handles the updates and rendering. This simplifies the code and reduces the likelihood of bugs.
 
