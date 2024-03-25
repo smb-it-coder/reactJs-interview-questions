@@ -47,7 +47,7 @@ React offers lifecycle methods (for class components) and hooks (for functional 
 ### Error Handling with Error Boundaries:
 React allows developers to define Error Boundaries, special components that catch JavaScript errors during rendering, in lifecycle methods, or in constructors of the whole tree below them. This feature helps isolate errors and prevents them from crashing the entire application.
 - What is JSX in React?
-- Explain the difference between state and props in React.
+- [Explain the difference between state and props in React]([relative/path/to/new/page](https://github.com/smb-it-coder/reactJs-interview-questions/blob/main/props-vs-state.md))
 - What is the virtual DOM? How does React use it?
 - Describe the component lifecycle in React.
 - What are controlled components in React?
