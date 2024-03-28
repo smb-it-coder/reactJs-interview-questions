@@ -1,3 +1,4 @@
+# useEffect
 The **useEffect hook** in React is used for performing side effects in function components. Side effects may include data fetching, subscriptions, or manually changing the DOM in reaction to state or props changes. useEffect is a replacement for lifecycle methods like **componentDidMount**, **componentDidUpdate**, and **componentWillUnmount** in class components.
 
 ## Basic Usage:
@@ -52,6 +53,22 @@ useEffect can also return a cleanup function. This function will be executed bef
 - **3** Effects with a cleanup function will run that cleanup before applying the next effect.
 - **4** You cannot directly return a promise from useEffect. Instead, you can create an async function inside and call it.
 
+            useEffect(() => {
+              async function fetchData() {
+                const response = await fetch('api/data');
+                const data = await response.json();
+                // Update component state
+              }
+              fetchData();
+            }, []);
 
 
-## 
+## Common Use Cases:
+
+- Fetching data from an API when a component mounts.
+- Subscribing to external data sources.
+- Manipulating the DOM directly.
+- Setting up event listeners.
+- Managing document titles or other side effects.
+
+**useEffect** is a powerful hook that enables you to handle side effects in function components effectively, providing cleaner and more concise code compared to class components' lifecycle methods. Understanding its usage and the rules around it is crucial for building React applications efficiently.
