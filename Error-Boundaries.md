@@ -7,7 +7,7 @@ In React applications, errors in components can lead to a cascading effect, pote
    - **componentDidCatch(error, errorInfo):** This method primarily serves logging purposes. It receives the error object and additional error information, allowing you to capture details about the error for debugging or reporting.
 - **Fallback UI:** Error Boundaries enable you to display a custom UI when an error occurs instead of leaving the user with a blank screen or cryptic error messages. This fallback UI can provide a more informative or user-friendly experience.
 
-## mplementation:
+## Implementation:
 Here's a basic example demonstrating an Error Boundary component:
 
           
