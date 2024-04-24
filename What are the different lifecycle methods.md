@@ -2,10 +2,10 @@
 In the context of software development, especially in frameworks like React for JavaScript, lifecycle methods refer to predefined functions that get executed at various stages of a component's existence. Here's an overview of the lifecycle methods commonly used in React:
 
 ## Mounting Phase:
---**constructor()**: This is the first method called during the creation of a component. It's used for initializing state and binding event handlers.
---**static getDerivedStateFromProps()**: This is a static method used to update the state based on changes in props before rendering the component.
---**render()**: This method is responsible for rendering the component's UI.
---**componentDidMount()**: This method is called once the component is mounted to the DOM. It's often used for making AJAX requests or setting up subscriptions.
+-**constructor()**: This is the first method called during the creation of a component. It's used for initializing state and binding event handlers.
+-**static getDerivedStateFromProps()**: This is a static method used to update the state based on changes in props before rendering the component.
+-**render()**: This method is responsible for rendering the component's UI.
+-**componentDidMount()**: This method is called once the component is mounted to the DOM. It's often used for making AJAX requests or setting up subscriptions.
 ## Updating Phase:
  -- **static getDerivedStateFromProps()**: Same as in the mounting phase, but it's also called when the component is updated.
  -- **shouldComponentUpdate()**: This method determines whether the component should re-render or not. It's used for performance optimization.
